@@ -19,14 +19,23 @@
 <body>
     <header>
         <!-- nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="#"><img src="assets/img/giarddesign.png" alt="giarddesign logo"></a>
+                <!-- show search in mobile -->
+                <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center">
                         <!--Dropdown menu Oferty -->
@@ -53,11 +62,15 @@
                         <li class="nav-item me-md-4">
                             <a class="nav-link" href="#kontakt">Kontakt</a>
                         </li>
-                        <!--Show search offcanvas -->
-                        <li class="nav-item me-md-5">
+                        <!--Show search-->
+                        <li class="nav-item me-md-5 d-none d-md-block">
                             <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
-                                    src="assets/icon/search.svg" alt="search icon"></button>
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
                         </li>
 
                     </ul>
@@ -81,7 +94,57 @@
     </div>
 
     <main>
-        <!-- TODO  Section info-->
+        <section id="intro">
+            <div class="container-fluid mt-5 bg-secondary">
+                <div class="row justify-content-between">
+                    <!-- left section-->
+                    <div class="col-md-6 p-5">
+                        <h2 class="display-3 my-5">Nowoczesna aranżacja
+                            Twojego ogrodu</h2>
+                        <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
+                            kompleksowy
+                            zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                        <button class="btn btn-primary rounded-5 px-4 py-2 mt-4 me-5">Skontaktuj się z nami</button>
+                        <button class="btn btn-outline-primary rounded-5 py-2 px-4 mt-4">Zobacz nasze realizacje <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-down ms-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                            </svg></button>
+                    </div>
+                    <!-- right section -->
+                    <div class="col-md-6 p-0 d-none d-md-block">
+                        <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- TODO fix to big photo -->
+                                <div class="carousel-item active">
+                                    <img src="assets/img/Photo1.jpg" class="d-block w-100" alt="photo1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="..." class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="btn-group position-absolute end-0 bottom-0" role="group"
+                                aria-label="Basic example">
+                                <button class="btn p-4 bg-white rounded-0" type="button"
+                                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <img src="assets/icon/Arrow-left.svg" alt="arrow left">
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="btn p-4 bg-white rounded-0" type="button"
+                                    data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <img src="assets/icon/Arrow-right.svg" alt="arrow right">
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- TODO  Section Oferta -->
         <!-- TODO  Section O firmie -->
         <!-- TODO  Section Realizacje -->
