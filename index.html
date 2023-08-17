@@ -9,11 +9,88 @@
     <link rel="stylesheet" href="css/main.min.css">
 
     <!-- Bootstrap 5 js file -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript  -->
+    <script defer src="js/script.js"></script>
+    <title>Zadanie rekrutacyjne 2023</title>
 </head>
 
 <body>
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#"><img src="assets/img/giarddesign.png" alt="giarddesign logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+                        <!--Dropdown menu Oferty -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-md-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Oferty
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!--Navigation to O firmie -->
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" aria-current="page" href="#o_firmie">O firmie</a>
+                        </li>
+                        <!--Navigation to Realizacje -->
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#realizacje">Realizacje</a>
+                        </li>
+                        <!--Navigation to Kontakt -->
+                        <li class="nav-item me-md-4">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                        <!--Show search offcanvas -->
+                        <li class="nav-item me-md-5">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img
+                                    src="assets/icon/search.svg" alt="search icon"></button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Offcanvas serach bar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Wyszukaj</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Co cię interesuje ?" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Szukaj</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <!-- TODO  Section info-->
+        <!-- TODO  Section Oferta -->
+        <!-- TODO  Section O firmie -->
+        <!-- TODO  Section Realizacje -->
+        <!-- TODO  Section Social -->
+    </main>
+
+    <footer>
+        <!-- TODO Stopka -->
+    </footer>
 
 </body>
 
