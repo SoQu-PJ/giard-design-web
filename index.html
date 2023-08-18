@@ -19,7 +19,7 @@
 <body>
     <header>
         <!-- nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5" href="#"><img src="assets/img/giarddesign.png" alt="giarddesign logo"></a>
                 <!-- show search in mobile -->
@@ -94,11 +94,12 @@
     </div>
 
     <main>
-        <section id="intro">
+        <!-- Section Intro -->
+        <section id="intro" class="mt-5">
             <div class="container-fluid mt-5 bg-secondary">
-                <div class="row justify-content-between">
+                <div class="row justify-content-center justify-content-xxl-end">
                     <!-- left section-->
-                    <div class="col-md-6 p-5">
+                    <div class="col-xxl-4 col-lg-6 col-md-8 p-5">
                         <h2 class="display-3 my-5">Nowoczesna aranżacja
                             Twojego ogrodu</h2>
                         <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy
@@ -112,19 +113,19 @@
                                     d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
                             </svg></button>
                     </div>
+                    <div class="col-xxl-2 d-none d-xxl-block"></div>
                     <!-- right section -->
-                    <div class="col-md-6 p-0 d-none d-md-block">
+                    <div class="col-xxl-5 col-lg-6 col-md-6 p-0 d-none d-lg-block">
                         <div id="carouselExample" class="carousel slide position-relative" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <!-- TODO fix to big photo -->
                                 <div class="carousel-item active">
                                     <img src="assets/img/Photo1.jpg" class="d-block w-100" alt="photo1">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
+                                    <img src="assets/img/Photo1.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
+                                    <img src="assets/img/Photo1.jpg" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <div class="btn-group position-absolute end-0 bottom-0" role="group"
@@ -145,7 +146,198 @@
                 </div>
             </div>
         </section>
-        <!-- TODO  Section Oferta -->
+        <!-- Section oferta -->
+        <section id="oferta">
+            <div class="container-fluid bg-light">
+                <div class="row p-5 justify-content-center">
+                    <div class="col-md-9 col-12">
+                        <div class="w-md-50 w-75">
+                            <h3 class="lead fs-6 text-muted">Oferta</h3>
+                            <h2 class="display-3 w-100 mt-0 mb-5">Działamy <span class="fst-italic">kompleksowo</span>
+                            </h2>
+                            <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+                                nowoczesne ogrody
+                                przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i
+                                wcielimy
+                                w
+                                życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- normal responsive version -->
+                <div class="row justify-content-center py-3 d-none d-lg-flex">
+                    <!-- Projekty Card -->
+                    <div class="bg-white rounded-4 col-3 mx-5">
+                        <div class="card border-0 py-2 px-5">
+                            <div class="card-body">
+                                <h5 class="card-title my-3"><img src="assets/icon/Suffix.svg" alt=""></h5>
+                                <h4 class="card-subtitle mb-2 mt-4 fw-normal">Projekty</h4>
+                                <p class="card-text mb-5">
+                                    Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
+                                    istniejącej przestrzeni.</p>
+                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                        Dowiedz się
+                                        więcej
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </span>
+                                    <hr class="position-absolute top-50 bg-secondary w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wizualizacje Card -->
+                    <div class="bg-white rounded-4 col-3 mx-4">
+                        <div class="card border-0 rounded-4 py-2 px-5">
+                            <div class="card-body">
+                                <h5 class="card-title my-3"><img src="assets/icon/Suffix2.svg" alt=""></h5>
+                                <h4 class="card-subtitle mb-2 mt-4 fw-normal">Wizualizacje</h4>
+                                <p class="card-text mb-5">
+                                    Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
+                                    technologii 3D.</p>
+                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                        Dowiedz się
+                                        więcej
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </span>
+                                    <hr class="position-absolute top-50 bg-secondary w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Realizacje Card -->
+                    <div class="bg-white rounded-4 col-3 mx-5">
+                        <div class="card border-0 rounded-4 py-2 px-5">
+                            <div class="card-body">
+                                <h5 class="card-title my-3"><img src="assets/icon/Suffix3.svg" alt=""></h5>
+                                <h4 class="card-subtitle mb-2 mt-4 fw-normal">Realizacje</h4>
+                                <p class="card-text mb-5">
+                                    Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
+                                    technologii.</p>
+                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                        Dowiedz się
+                                        więcej
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                            fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                        </svg>
+                                    </span>
+                                    <hr class="position-absolute top-50 bg-secondary w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile responsive version -->
+
+                <div class="row justify-content-center pt-0 pb-3 d-block d-lg-none">
+                    <div id="carouselExampleIndicatorsCardMobile" class="carousel slide rounded-5" data-bs-ride="true">
+                        <div class="carousel-inner rounded-5">
+                            <div class="carousel-item active rounded-5">
+                                <!-- Projekty Card -->
+                                <div class="bg-white rounded-5">
+                                    <div class="card border-0 py-2 px-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix.svg" alt=""></h5>
+                                            <h4 class="card-subtitle mb-2 mt-4 fw-normal">Projekty</h4>
+                                            <p class="card-text mb-5">
+                                                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                                                wykorzystaniem
+                                                istniejącej przestrzeni.</p>
+                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                                    Dowiedz się
+                                                    więcej
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                                        fill="currentColor" class="bi bi-arrow-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                    </svg>
+                                                </span>
+                                                <hr class="position-absolute top-50 bg-secondary w-100">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Wizualizacje Card -->
+                                <div class="bg-white rounded-5">
+                                    <div class="card border-0 py-2 px-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix2.svg" alt=""></h5>
+                                            <h4 class="card-subtitle mb-2 mt-4 fw-normal">Wizualizacje</h4>
+                                            <p class="card-text mb-5">
+                                                Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+                                                animowanego w
+                                                technologii 3D.</p>
+                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                                    Dowiedz się
+                                                    więcej
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                                        fill="currentColor" class="bi bi-arrow-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                    </svg>
+                                                </span>
+                                                <hr class="position-absolute top-50 bg-secondary w-100">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!-- Realizacje Card -->
+                                <div class="bg-white rounded-5">
+                                    <div class="card border-0 py-2 px-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix3.svg" alt=""></h5>
+                                            <h4 class="card-subtitle mb-2 mt-4 fw-normal">Realizacje</h4>
+                                            <p class="card-text mb-5">
+                                                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                                                zaawansowanych
+                                                technologii.</p>
+                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                                    Dowiedz się
+                                                    więcej
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                                                        fill="currentColor" class="bi bi-arrow-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                                    </svg>
+                                                </span>
+                                                <hr class="position-absolute top-50 bg-secondary w-100">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleIndicatorsCardMobile" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleIndicatorsCardMobile" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- TODO  Section O firmie -->
         <!-- TODO  Section Realizacje -->
         <!-- TODO  Section Social -->
