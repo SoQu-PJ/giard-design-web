@@ -1,0 +1,14 @@
+.masonry-container{
+    min-height: 400px;
+    height: 70%;
+    max-height: 1440px;
+}
+
+// .expand-button-masonry{
+//     width: 200px;
+// }
+
+.gradient-overlay {
+    height: 100%; /* Wysokość gradientu */
+    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0) 100%);
+}

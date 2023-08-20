@@ -12,9 +12,14 @@
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Javascript  -->
-    <script defer src="js/script.js"></script>
+    <script src="node_modules/macy/dist/macy.js"></script>
+    <script type="module" src="js/script.js"></script>
+
+
     <title>Zadanie rekrutacyjne 2023</title>
 </head>
+
+<!-- TODO Animation -->
 
 <body>
     <header>
@@ -113,19 +118,18 @@
                                     Oferujemy
                                     kompleksowy
                                     zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                                <button
-                                    class="btn btn-primary rounded-5 px-4 py-2 mt-4 ms-lg-5 ms-md-1 me-lg-4 me-md-3">Skontaktuj
+                                <a class="btn btn-primary rounded-5 px-4 py-2 mt-4 ms-lg-5 ms-md-1 me-lg-4 me-md-3">Skontaktuj
                                     się
                                     z
-                                    nami</button>
-                                <button class="btn btn-outline-primary rounded-5 py-2 px-4 mt-4 ms-lg-5 ms-md-1">Zobacz
+                                    nami</a>
+                                <a class="btn btn-outline-primary rounded-5 py-2 px-4 mt-4 ms-lg-5 ms-md-1">Zobacz
                                     nasze
                                     realizacje
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-arrow-down ms-1" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                                    </svg></button>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
@@ -391,7 +395,44 @@
             </div>
             </div>
         </section>
-        <!-- TODO  Section Realizacje -->
+        <!-- Section realizacje -->
+        <!-- TODO Section Rozwin -->
+        <section id="realizacje">
+            <div class="container-fluid bg-secondary">
+                <div class="row flex-column justify-content-center">
+                    <div class="col-md-8 m-md-5 ps-md-5">
+                        <h3 class="lead fs-6 text-primary mt-5 ms-5">Realizacje</h3>
+                        <h2 class="display-1 mt-0 mb-5 ms-5 text-dark text-start">Nasze <span
+                                class="fst-italic">projekty</span>
+                    </div>
+                    <div class="masonry-container position-relative overflow-hidden">
+                        <div class="masonry">
+                            <img src="assets/img/Photo3.jpg" alt="Photo3">
+                            <img src="assets/img/Photo4.jpg" alt="Photo4">
+                            <img src="assets/img/Photo5.jpg" alt="Photo5">
+                            <img src="assets/img/Photo6.jpg" alt="Photo6">
+                            <img src="assets/img/Photo7.jpg" alt="Photo7">
+                            <img src="assets/img/Photo8.jpg" alt="Photo8">
+                            <img src="assets/img/Photo9.jpg" alt="Photo9">
+                            <img src="assets/img/Photo10.jpg" alt="Photo10">
+                            <img src="assets/img/Photo11.jpg" alt="Photo11">
+                        </div>
+                        <div class="gradient-overlay position-absolute start-0 top-0 w-100 z-1">
+                            <div class="w-100 h-100 position-relative">
+                                <button type="button"
+                                    class="btn btn-outline-dark z-2 rounded-5 expand-button-masonry position-absolute mb-md-5 px-5 py-3 bottom-0 start-50 translate-middle">Rozwiń
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-arrow-down ms-1" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
         <section id="social-instagram">
             <div class="container-fluid">
                 <div class="container my-5">
