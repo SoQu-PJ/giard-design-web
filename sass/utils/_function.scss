@@ -1,0 +1,8 @@
+@function which-arrow($arrow){
+    @if $arrow == 'left'{
+        @return -10px;
+    }
+    @if $arrow == 'right'{
+        @return 10px;
+    }
+}

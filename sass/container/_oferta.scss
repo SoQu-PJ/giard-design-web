@@ -1,0 +1,34 @@
+// animation
+.card-custom-hover-animation-oferta{
+    transition: 1s;
+    transform: scale(1);
+    .card-title-animation-oferta{
+        transition: 1s;
+        transform: translateX();
+    }
+    &:hover{
+        transition: 1s;
+        transform: scale(1.05);
+        .card-title{
+            transition: 1s;
+            transform: translateX(50%);
+        }
+    }
+}
+
+.card-custom-link-hover-animation-oferta{
+    &:hover{
+        span{
+            transition: 1s;
+            transform: scale(1.1);
+
+            svg{
+                animation: arrow-button-slider-right 1s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+            }
+        }
+        hr{
+            transition: 1s;
+            transform: scale(1.1);
+        }
+    }
+}

@@ -6,3 +6,34 @@
 #slider-button{
     width: 12%;
 }
+
+// animation left section 
+.custom-animation-button-down-intro{
+    &:hover{
+        animation: hoverButtonDownEffect 1.5s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+    }
+}
+
+.custom-animation-button-down-with-arrow-intro{
+    &:hover{
+        animation: hoverButtonDownEffect 1.5s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+
+        svg{
+            animation: arrowDownButton 1.5s cubic-bezier(.84,.19,.34,.81) 1 running both;
+            
+            path{
+                animation: changeColorSvg 1.5s cubic-bezier(.84,.19,.34,.81) 1 running both;
+            }
+        }
+    }
+}
+
+    
+// animation right section 
+
+.slider-arrow-right-intro:hover img{
+    animation: arrow-button-slider-right 1s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+}
+.slider-arrow-left-intro:hover img{
+    animation: arrow-button-slider-left 1s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+}

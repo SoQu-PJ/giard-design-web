@@ -1,0 +1,5 @@
+.button-social-instagram-animation{
+    &:hover{
+        animation: hoverButtonDownEffect 1.5s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+    }
+}

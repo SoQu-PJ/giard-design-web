@@ -30,7 +30,7 @@
                 <!-- show search in mobile -->
                 <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        class="bi bi-search" viewBox="0 0 16 16">
                         <path
                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                     </svg></button>
@@ -119,11 +119,13 @@
                                         Oferujemy
                                         kompleksowy
                                         zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                                    <a class="btn btn-primary rounded-5 px-4 py-2 mt-4 ms-md-1 me-lg-4 me-md-3">Skontaktuj
+                                    <a
+                                        class="btn btn-primary rounded-5 px-4 py-2 mt-4 ms-md-1 me-lg-4 me-md-3 custom-animation-button-down-intro">Skontaktuj
                                         się
                                         z
                                         nami</a>
-                                    <a class="btn btn-outline-primary rounded-5 py-2 px-4 mt-4  ms-md-1">Zobacz
+                                    <a
+                                        class="btn btn-outline-primary rounded-5 py-2 px-4 mt-4  ms-md-1 custom-animation-button-down-with-arrow-intro">Zobacz
                                         nasze
                                         realizacje
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -154,13 +156,13 @@
                     <!-- button -->
                     <div id="slider-button" class="btn-group position-absolute end-0 bottom-0 z-2 p-0 d-none d-xl-flex"
                         role="group" aria-label="Basic example">
-                        <button class="btn p-4 bg-white rounded-0" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
+                        <button class="btn p-4 bg-white rounded-0 slider-arrow-left-intro" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="prev">
                             <img src="assets/icon/Arrow-left.svg" alt="arrow left">
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="btn p-4 bg-white rounded-0" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
+                        <button class="btn p-4 bg-white rounded-0 slider-arrow-right-intro" type="button"
+                            data-bs-target="#carouselExample" data-bs-slide="next">
                             <img src="assets/icon/Arrow-right.svg" alt="arrow right">
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -170,7 +172,6 @@
         </section>
         <!-- Section oferta -->
         <section id="oferta">
-            <!-- TODO effect Hover -->
             <div class="container-fluid bg-light py-5">
                 <div class="row p-5 justify-content-center">
                     <div class="col-lg-9 col-md-10 col-12">
@@ -192,15 +193,18 @@
                 <!-- xl responsive version -->
                 <div class="row justify-content-center py-3 pb-5 d-none d-xl-flex">
                     <!-- Projekty Card -->
-                    <div class="bg-white rounded-4 col-3 mx-5 mb-5">
+                    <div class="bg-white rounded-4 col-3 mx-5 mb-5 card-custom-hover-animation-oferta">
                         <div class="card border-0 py-2 px-5">
                             <div class="card-body">
-                                <h5 class="card-title my-3"><img src="assets/icon/Suffix.svg" alt=""></h5>
+                                <h5 class="card-title card-title-animation-oferta my-3"><img
+                                        src="assets/icon/Suffix.svg" alt=""></h5>
                                 <h4 class="card-subtitle mb-2 mt-4 fw-normal">Projekty</h4>
                                 <p class="card-text mb-5">
                                     Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem
                                     istniejącej przestrzeni.</p>
-                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                <a href="#"
+                                    class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                        class="d-inline-block">
                                         Dowiedz się
                                         więcej
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
@@ -215,15 +219,18 @@
                         </div>
                     </div>
                     <!-- Wizualizacje Card -->
-                    <div class="bg-white rounded-4 col-3 mx-4 mb-5">
+                    <div class="bg-white rounded-4 col-3 mx-4 mb-5 card-custom-hover-animation-oferta">
                         <div class="card border-0 rounded-4 py-2 px-5">
                             <div class="card-body">
-                                <h5 class="card-title my-3"><img src="assets/icon/Suffix2.svg" alt=""></h5>
+                                <h5 class="card-title card-title-animation-oferta my-3"><img
+                                        src="assets/icon/Suffix2.svg" alt=""></h5>
                                 <h4 class="card-subtitle mb-2 mt-4 fw-normal">Wizualizacje</h4>
                                 <p class="card-text mb-5">
                                     Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w
                                     technologii 3D.</p>
-                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                <a href="#"
+                                    class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                        class="d-inline-block">
                                         Dowiedz się
                                         więcej
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
@@ -238,15 +245,18 @@
                         </div>
                     </div>
                     <!-- Realizacje Card -->
-                    <div class="bg-white rounded-4 col-3 mx-5 mb-5">
+                    <div class="bg-white rounded-4 col-3 mx-5 mb-5 card-custom-hover-animation-oferta">
                         <div class="card border-0 rounded-4 py-2 px-5">
                             <div class="card-body">
-                                <h5 class="card-title my-3"><img src="assets/icon/Suffix3.svg" alt=""></h5>
+                                <h5 class="card-title card-title-animation-oferta my-3"><img
+                                        src="assets/icon/Suffix3.svg" alt=""></h5>
                                 <h4 class="card-subtitle mb-2 mt-4 fw-normal">Realizacje</h4>
                                 <p class="card-text mb-5">
                                     Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych
                                     technologii.</p>
-                                <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                <a href="#"
+                                    class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                        class="d-inline-block">
                                         Dowiedz się
                                         więcej
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
@@ -264,7 +274,7 @@
 
                 <!-- mobile\tablet\laptop responsive version -->
 
-                <div class="row justify-content-center pt-0 pb-3 d-flex d-xl-none">
+                <div class="row justify-content-center pt-0 pb-3 d-flex d-xl-none card-custom-hover-animation-oferta">
                     <div class="col-md-2 d-md-block d-none"></div>
                     <div id="carouselExampleIndicatorsCardMobile" class="carousel slide rounded-5 col-md-8"
                         data-bs-ride="true">
@@ -274,13 +284,16 @@
                                 <div class="bg-white rounded-5">
                                     <div class="card border-0 py-2 px-4">
                                         <div class="card-body">
-                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix.svg" alt=""></h5>
+                                            <h5 class="card-title card-title-animation-oferta my-3"><img
+                                                    src="assets/icon/Suffix.svg" alt=""></h5>
                                             <h4 class="card-subtitle mb-2 mt-4 fw-normal">Projekty</h4>
                                             <p class="card-text mb-5">
                                                 Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
                                                 wykorzystaniem
                                                 istniejącej przestrzeni.</p>
-                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                            <a href="#"
+                                                class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                                    class="d-inline-block">
                                                     Dowiedz się
                                                     więcej
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
@@ -298,16 +311,19 @@
                             </div>
                             <div class="carousel-item">
                                 <!-- Wizualizacje Card -->
-                                <div class="bg-white rounded-5">
+                                <div class="bg-white rounded-5 card-custom-hover-animation-oferta">
                                     <div class="card border-0 py-2 px-4">
                                         <div class="card-body">
-                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix2.svg" alt=""></h5>
+                                            <h5 class="card-title card-title-animation-oferta my-3"><img
+                                                    src="assets/icon/Suffix2.svg" alt=""></h5>
                                             <h4 class="card-subtitle mb-2 mt-4 fw-normal">Wizualizacje</h4>
                                             <p class="card-text mb-5">
                                                 Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
                                                 animowanego w
                                                 technologii 3D.</p>
-                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                            <a href="#"
+                                                class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                                    class="d-inline-block">
                                                     Dowiedz się
                                                     więcej
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
@@ -325,18 +341,21 @@
                             </div>
                             <div class="carousel-item">
                                 <!-- Realizacje Card -->
-                                <div class="bg-white rounded-5">
+                                <div class="bg-white rounded-5 card-custom-hover-animation-oferta">
                                     <div class="card border-0 py-2 px-5">
                                         <div class="card-body">
-                                            <h5 class="card-title my-3"><img src="assets/icon/Suffix3.svg" alt=""></h5>
+                                            <h5 class="card-title card-title-animation-oferta my-3"><img
+                                                    src="assets/icon/Suffix3.svg" alt=""></h5>
                                             <h4 class="card-subtitle mb-2 mt-4 fw-normal">Realizacje</h4>
                                             <p class="card-text mb-5">
                                                 Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
                                                 zaawansowanych
                                                 technologii.</p>
-                                            <a href="#" class="card-link text-decoration-none position-relative"><span>
+                                            <a href="#"
+                                                class="card-link text-decoration-none position-relative card-custom-link-hover-animation-oferta"><span
+                                                    class="d-inline-block">
                                                     Dowiedz się
-                                                    więcej
+                                                    więcej-intro
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
                                                         fill="currentColor" class="bi bi-arrow-right"
                                                         viewBox="0 0 16 16">
@@ -386,12 +405,13 @@
                                 realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
                                 które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody
                                 małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-                            <button class="btn btn-primary btn-outline-light rounded-5 px-4 py-2 mt-4 me-md-3">Poznaj
+                            <a
+                                class="btn btn-primary btn-outline-light rounded-5 px-4 py-2 mt-4 me-md-3 button-custom-link-hover-animation-o-firmie">Poznaj
                                 nas bliżej <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
                                     fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                                </svg></button>
+                                </svg></a>
                         </div>
                     </div>
                 </div>
@@ -399,7 +419,6 @@
             </div>
         </section>
         <!-- Section realizacje -->
-        <!-- TODO Section Rozwin -->
         <section id="realizacje">
             <div class="container-fluid bg-secondary">
                 <div class="row flex-column justify-content-center">
@@ -420,10 +439,11 @@
                             <img src="assets/img/Photo10.jpg" alt="Photo10">
                             <img src="assets/img/Photo11.jpg" alt="Photo11">
                         </div>
+                        <!-- Gradient & Button expand -->
                         <div class="gradient-overlay position-absolute start-0 top-0 w-100 z-1">
                             <div class="w-100 h-100 position-relative">
                                 <button id="openPopupButton" type="button"
-                                    class="btn btn-outline-dark z-2 rounded-5 expand-button-masonry position-absolute mb-md-5 px-5 py-3 bottom-0 start-50 translate-middle">Rozwiń
+                                    class="btn btn-outline-dark z-2 rounded-5 expand-button-masonry position-absolute mb-md-5 px-5 py-3 bottom-0 start-50 translate-middle custom-animation-button-down-with-arrow-realizacje">Rozwiń
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                         class="bi bi-arrow-down ms-1" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -488,7 +508,7 @@
                         </div>
                         <div class="col-md-2 my-md-5 p-2 me-md-3 mx-4">
                             <p class="text-light">Śledź nasze najnowsze realizacje!</p>
-                            <a class="btn btn-light text-primary rounded-5 px-4 py-2"
+                            <a class="btn btn-light text-primary rounded-5 px-4 py-2 button-social-instagram-animation d-inline-block"
                                 href="https://www.instagram.com/">Instagram</a>
                         </div>
                     </div>
@@ -510,7 +530,9 @@
                             <div class="col">
                                 <p class="text-light my-lg-3">Daj znać, co możemy dla Ciebie zrobić!</p>
                             </div>
-                            <div class="col"><a class="btn btn-primary rounded-5 px-4 py-3" href="">Skontaktuj się z
+                            <div class="col"><a
+                                    class="btn btn-primary rounded-5 px-4 py-3 button-hover-animation-footer d-inline-block"
+                                    href="">Skontaktuj się z
                                     nami</a></div>
                         </div>
                     </div>

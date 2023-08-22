@@ -1,7 +1,18 @@
+// utils
+@import "./utils/variables";
+@import "./utils/function";
+@import "./utils/mixins";
+
+// base
+@import "./base/animations";
+
 // container
 @import "./container/intro";
+@import "./container/oferta";
+@import "./container/o-firmie";
 @import "./container/realizacje";
-@import "./container/modal";
+@import "./container/social-instagram";
+@import "./container/footer";
 
 
 // import custom settings bootstrap

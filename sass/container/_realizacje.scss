@@ -4,11 +4,22 @@
     max-height: 1440px;
 }
 
-// .expand-button-masonry{
-//     width: 200px;
-// }
-
 .gradient-overlay {
     height: 100%; /* Wysokość gradientu */
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0) 100%);
+}
+
+// animation
+
+.custom-animation-button-down-with-arrow-realizacje{
+    &:hover{
+        svg{
+            animation: arrowDownButtonExpand 1.5s cubic-bezier(.84,.19,.34,.81) 1 running both,
+            arrowDownButtonExpandPulse 1.5s 1.5s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+            
+            path{
+                animation: changeColorSvg 1.5s cubic-bezier(.84,.19,.34,.81) 1 running both;
+            }
+        }
+    }
 }

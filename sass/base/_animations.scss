@@ -1,0 +1,56 @@
+@include arrowButtonSlider('left');
+@include arrowButtonSlider('right');
+
+@keyframes  hoverButtonDownEffect{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(10px) scale(1.2);
+    }
+}
+
+@keyframes arrowDownButton {
+    from{
+        transform: translate(0), scale(1);
+    }   
+    to{
+        transform: scale(3) translate(-180%, 100%);
+    }
+}
+@keyframes arrowDownButtonExpand {
+    from{
+        transform: translate(0), scale(1);
+    }   
+    to{
+        transform: scale(3) translate(-50%, -120%);
+    }
+}
+@keyframes arrowDownButtonExpandPulse {
+    0%{
+        transform: scale(3) translate(-50%, -120%);
+    }
+    50%{
+        transform: scale(3) translate(-50%, -125%);
+    }
+    75%{
+        transform: scale(3) translate(-50%, -120%);
+    }
+    100%{
+        transform: scale(3) translate(-50%, -125%);
+    }
+}
+
+@keyframes changeColorSvg {
+    from{
+        fill: $light;
+    }to{
+        fill: $green;
+    }
+}
+
+
+

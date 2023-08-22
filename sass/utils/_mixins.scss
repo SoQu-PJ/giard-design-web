@@ -1,0 +1,10 @@
+@mixin arrowButtonSlider($arrow){
+    @keyframes arrow-button-slider-#{$arrow}{
+        from{
+            transform: translate(0), scale(1);
+        }   
+        to{
+            transform: scale(1.2) translateX(which-arrow($arrow));
+        }
+    }
+}

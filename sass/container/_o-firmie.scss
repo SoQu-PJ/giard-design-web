@@ -1,0 +1,11 @@
+// animation
+.button-custom-link-hover-animation-o-firmie{
+    &:hover{
+            transition: 1s;
+            transform: scale(1.2);
+
+            svg{
+                animation: arrow-button-slider-right 1s cubic-bezier(.84,.19,.34,.81) infinite alternate;
+            }
+    }
+}
